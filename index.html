@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>CRUD APP </h1>
+    </div>
+    <div class="container">
+        <label for="productName">Product Name</label>
+        <input class="form-control" type="text" id="productName">
+        <label for="productPrice">Product Price</label>
+        <input class="form-control" type="number" id="productPrice">
+        <label for="productDesc">Product Description</label>
+        <textarea class="form-control" id="productDesc" rows="4"></textarea>
+
+     
+
+   
+        <button id="add" onclick="getInputValue()" class="btn btn-primary">Add
+            Product</button>
+        <button id="update" onclick="callUpdate()" class="btn btn-success">Update
+            Product</button>
+    </div>
+    <div class="container mt-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- Table rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="Main.js"></script>
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
